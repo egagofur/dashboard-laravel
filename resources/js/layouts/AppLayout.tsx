@@ -1,10 +1,11 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, useState } from 'react';
 import Navbar from './Navbar';
 
 const AppLayout = ({ children }: PropsWithChildren) => {
+    const [open, setOpen] = useState(false);
     return (
         <div>
-            <Navbar />
+            <Navbar open={open} setOpen={setOpen} />
             {children}
         </div>
     );

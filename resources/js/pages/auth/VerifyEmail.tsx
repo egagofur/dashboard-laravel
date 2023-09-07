@@ -1,4 +1,4 @@
-import { Button } from '@/components/button';
+import { Button, buttonVariants } from '@/components/button';
 import GuestLayout from '@/layouts/GuestLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
 import { FormEventHandler } from 'react';
@@ -38,7 +38,9 @@ export default function VerifyEmail({ status }: { status?: string }) {
                         href={route('logout')}
                         method="post"
                         as="button"
-                        className="text-sm underline text-muted-foreground hover:text-primary"
+                        className={buttonVariants({
+                            variant: 'link',
+                        })}
                     >
                         Log Out
                     </Link>
