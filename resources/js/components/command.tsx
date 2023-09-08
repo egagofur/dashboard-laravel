@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { DialogProps } from '@radix-ui/react-dialog';
 import { Command as CommandPrimitive } from 'cmdk';
-import { IconSearch } from '@tabler/icons-react';
 
 import { cn } from '@/lib/utils';
 import { Dialog, DialogContent } from '@/components/dialog';
+import { Icon } from './icon';
 
 const Command = React.forwardRef<
     React.ElementRef<typeof CommandPrimitive>,
@@ -41,7 +41,7 @@ const CommandInput = React.forwardRef<
 >(({ className, ...props }, ref) => (
     // eslint-disable-next-line react/no-unknown-property
     <div className="flex items-center border-b px-3" cmdk-input-wrapper="">
-        <IconSearch className="mr-2 h-4 w-4 shrink-0 opacity-50" />
+        <Icon name="IconSearch" className="mr-2 h-4 w-4 shrink-0 opacity-50" />
         <CommandPrimitive.Input
             ref={ref}
             className={cn(
