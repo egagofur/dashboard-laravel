@@ -1,10 +1,10 @@
+import Container from '@/components/container';
+import AppLayout from '@/layouts/AppLayout';
+import { PageProps } from '@/types';
+import { Head } from '@inertiajs/react';
 import DeleteUserForm from './partials/DeleteUserForm';
 import UpdatePasswordForm from './partials/UpdatePasswordForm';
 import UpdateProfileInformationForm from './partials/UpdateProfileInformationForm';
-import { Head } from '@inertiajs/react';
-import { PageProps } from '@/types';
-import AppLayout from '@/layouts/AppLayout';
-import Container from '@/components/container';
 
 export default function Edit({
     auth,

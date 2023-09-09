@@ -1,10 +1,11 @@
-import { useRef, useState, FormEventHandler } from 'react';
-import InputError from '@/components/InputError';
-import { useForm } from '@inertiajs/react';
-import { Button } from '@/components/button';
 import { Input } from '@/components/Input';
+import InputError from '@/components/InputError';
+import { Button } from '@/components/button';
 import { Label } from '@/components/label';
+import { useForm } from '@inertiajs/react';
+import { FormEventHandler, useRef, useState } from 'react';
 
+import { Card, CardContent } from '@/components/card';
 import {
     Dialog,
     DialogContent,
@@ -13,7 +14,6 @@ import {
     DialogHeader,
     DialogTitle,
 } from '@/components/dialog';
-import { Card, CardContent } from '@/components/card';
 import SectionTitle from '@/components/sectionTitle';
 
 export default function DeleteUserForm() {

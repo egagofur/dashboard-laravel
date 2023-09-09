@@ -1,7 +1,6 @@
-import * as React from 'react';
-import * as DialogPrimitive from '@radix-ui/react-dialog';
-import { IconX } from '@tabler/icons-react';
 import { cn } from '@/lib/utils';
+import * as DialogPrimitive from '@radix-ui/react-dialog';
+import * as React from 'react';
 import { Icon } from './icon';
 
 const Dialog = DialogPrimitive.Root;
@@ -112,10 +111,10 @@ DialogDescription.displayName = DialogPrimitive.Description.displayName;
 
 export {
     Dialog,
-    DialogTrigger,
     DialogContent,
-    DialogHeader,
-    DialogFooter,
-    DialogTitle,
     DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
 };

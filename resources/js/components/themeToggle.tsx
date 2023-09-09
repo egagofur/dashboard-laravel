@@ -1,5 +1,4 @@
 import { Button } from '@/components/button';
-import { IconMoon, IconSun } from '@tabler/icons-react';
 import { Icon } from './icon';
 
 export function ThemeToggle() {

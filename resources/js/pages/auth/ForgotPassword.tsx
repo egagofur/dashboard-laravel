@@ -1,8 +1,8 @@
-import GuestLayout from '@/layouts/GuestLayout';
+import { Input } from '@/components/Input';
 import InputError from '@/components/InputError';
 import { Button } from '@/components/button';
-import { Input } from '@/components/Input';
-import { Head, useForm } from '@inertiajs/react';
+import GuestLayout from '@/layouts/GuestLayout';
+import { useForm } from '@inertiajs/react';
 import { FormEventHandler } from 'react';
 
 export default function ForgotPassword({ status }: { status?: string }) {

@@ -1,10 +1,10 @@
-import React, { useEffect, FormEventHandler } from 'react';
-import GuestLayout from '@/layouts/GuestLayout';
-import InputError from '@/components/InputError';
-import { Label } from '@/components/label';
-import { Button } from '@/components/button';
-import { Link, useForm } from '@inertiajs/react';
 import { Input } from '@/components/Input';
+import InputError from '@/components/InputError';
+import { Button } from '@/components/button';
+import { Label } from '@/components/label';
+import GuestLayout from '@/layouts/GuestLayout';
+import { Link, useForm } from '@inertiajs/react';
+import React, { FormEventHandler, useEffect } from 'react';
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({

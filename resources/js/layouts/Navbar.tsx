@@ -1,7 +1,6 @@
 import ApplicationLogo from '@/components/ApplicationLogo';
 import NavLink from '@/components/NavLink';
-import { PageProps } from '@/types';
-import { Link, router, usePage } from '@inertiajs/react';
+import { Button } from '@/components/button';
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -10,10 +9,11 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@/components/dropdown-menu';
-import { IconChevronDown, IconCommand, IconSearch } from '@tabler/icons-react';
 import { ThemeToggle } from '@/components/themeToggle';
+import { PageProps } from '@/types';
+import { Link, router, usePage } from '@inertiajs/react';
+import { IconChevronDown, IconCommand, IconSearch } from '@tabler/icons-react';
 import { CommandMenu } from './commandMenu';
-import { Button } from '@/components/button';
 
 interface IProps {
     open: boolean;

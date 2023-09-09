@@ -1,19 +1,13 @@
-import InputError from '@/components/InputError';
-import { Link, useForm, usePage } from '@inertiajs/react';
-import { Transition } from '@headlessui/react';
-import { FormEventHandler } from 'react';
-import { PageProps } from '@/types';
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@/components/card';
 import { Input } from '@/components/Input';
-import { Label } from '@/components/label';
+import InputError from '@/components/InputError';
 import { Button } from '@/components/button';
+import { Card, CardContent } from '@/components/card';
+import { Label } from '@/components/label';
 import SectionTitle from '@/components/sectionTitle';
+import { PageProps } from '@/types';
+import { Transition } from '@headlessui/react';
+import { Link, useForm, usePage } from '@inertiajs/react';
+import { FormEventHandler } from 'react';
 
 export default function UpdateProfileInformation({
     mustVerifyEmail,
