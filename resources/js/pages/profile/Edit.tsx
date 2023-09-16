@@ -22,7 +22,6 @@ export default function Edit({
                             mustVerifyEmail={mustVerifyEmail}
                             status={status}
                         />
-
                         <UpdatePasswordForm />
                         <DeleteUserForm />
                     </div>

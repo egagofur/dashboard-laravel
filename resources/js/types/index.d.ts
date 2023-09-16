@@ -12,3 +12,8 @@ export type PageProps<
         user: User;
     };
 };
+
+export interface ICommandMenuProps {
+    open: boolean;
+    setOpen: (open: boolean) => void;
+}

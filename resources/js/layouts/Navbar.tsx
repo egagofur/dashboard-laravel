@@ -10,22 +10,17 @@ import {
     DropdownMenuTrigger,
 } from '@/components/dropdown-menu';
 import { ThemeToggle } from '@/components/themeToggle';
-import { PageProps } from '@/types';
+import { ICommandMenuProps, PageProps } from '@/types';
 import { Link, router, usePage } from '@inertiajs/react';
 import { IconChevronDown, IconCommand, IconSearch } from '@tabler/icons-react';
 import { CommandMenu } from './commandMenu';
 
-interface IProps {
-    open: boolean;
-    setOpen: (open: boolean) => void;
-}
-
-const Navbar = ({ open, setOpen }: IProps) => {
+const Navbar = ({ open, setOpen }: ICommandMenuProps) => {
     const { auth } = usePage<PageProps>().props;
     return (
         <>
             <CommandMenu openCommandMenu={open} setOpenCommandMenu={setOpen} />
-            <nav className="px-4 py-2 border-b border-border/60 sm:py-3 sm:px-6">
+            <nav className="px-4 lg:block hidden py-2 border-b border-border/60 sm:py-3 sm:px-6">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-x-2">
                         <ApplicationLogo className="w-auto h-8 mr-4 fill-primary" />
